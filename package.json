@@ -1,0 +1,26 @@
+{
+  "name": "chrome-cli",
+  "version": "1.0.0",
+  "description": "CLI Tools for building browser extensions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arandompieceofcheese/chrome-cli-tools.git"
+  },
+  "author": "arandompieceofcheese",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arandompieceofcheese/chrome-cli-tools/issues"
+  },
+  "homepage": "https://github.com/arandompieceofcheese/chrome-cli-tools#readme",
+  "bin": {
+    "chrometools": "./index.js"
+  },
+  "dependencies": {
+    "commander": "^2.19.0",
+    "fs-extra": "^7.0.0"
+  }
+}
