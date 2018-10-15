@@ -6,8 +6,8 @@ const fs = require('fs-extra');
       let manifest = JSON.parse(await fs.readFile('./manifest.json', 'utf8'));
       manifest.broswer_action = {default_icon: "icon32.png", default_title: process.argv[3] || "My Extention", default_popup: "popup.html"};
       await fs.writeFile('./manifest.json', JSON.stringify(manifest));
-      await fs.copy(__dirname + '/defaults/icon32.png', '.');
-      await fs.copy(__dirname + '/defaults/popup.html', '.');
+      await fs.copy(__dirname + '/defaults/icon32.png', './icon32.png');
+      await fs.copy(__dirname + '/defaults/popup.html', './popup.html');
       break;
 
 
